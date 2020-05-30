@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BLL.Dependencies.NinjectBusinessLogicModule">
+    <Position X="18.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NinjectBusinessLogicModule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLL.DTO.ResumeDTO">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAAAAABAAAAAAAgAAAAAAAAAAAAAAAAAAEAAEAAAAA=</HashCode>
+      <FileName>DTO Models\ResumeDTO.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Vacancies" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BLL.DTO.UserDTO">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACABAAQAAAAAEAAAAAwABAAAAAAAAAAQBAgAAAA=</HashCode>
+      <FileName>DTO Models\UserDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLL.DTO.VacansyDTO">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAgAAAAAAEACAAAEBAAAAAA=</HashCode>
+      <FileName>DTO Models\VacansyDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLL.Logic.ResumeService" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABACAAAAABAABAAgCAAQAAAABAAAgAkAAAAAgAAAA=</HashCode>
+      <FileName>ResumeService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_unitOfWork" />
+      <Field Name="_resumeMapper" />
+      <Field Name="_resumeUpdateMapper" />
+      <Field Name="_vacansyMapper" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLL.Logic.UserService" BaseTypeListCollapsed="true">
+    <Position X="10" Y="4" Width="1.5" />
+    <AssociationLine Name="_userMapper" Type="AutoMapper.IMapper" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.5" Y="4.469" />
+        <Point X="14.812" Y="4.469" />
+        <Point X="14.812" Y="3.812" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_userUpdateMapper" Type="AutoMapper.IMapper" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.5" Y="4.203" />
+        <Point X="11.875" Y="4.203" />
+        <Point X="11.875" Y="2.875" />
+        <Point X="14.875" Y="2.875" />
+        <Point X="14.875" Y="3.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAABAABAAgIAEAAAAAgAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>UserService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_unitOfWork" />
+      <Field Name="_userMapper" />
+      <Field Name="_userUpdateMapper" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLL.Logic.VacansyService" BaseTypeListCollapsed="true">
+    <Position X="16.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAACAAAAABAABAAgKAgAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>VacansyService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_resumeMapper" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAL.Models.Vacansy">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="BLL.Logic.IResumeService">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAABAAAAAAQAAAAAAAAgAkAAAAAgAAAA=</HashCode>
+      <FileName>IResumeService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BLL.Logic.IUserService">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAABAAAIAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>IUserService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BLL.Logic.IVacansyService">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAABAAAIAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IVacansyService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DAL.Repository.IUnitOfWork" Collapsed="true">
+    <Position X="12.5" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="AutoMapper.IMapper" Collapsed="true">
+    <Position X="14.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
